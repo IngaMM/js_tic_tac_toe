@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+  </head>
+  <body>
+    <h1> Tic-Tac-Toe </h1>
+    <div id="formContainer" class="visible">
+      <div>
+        <label for="name1">Name of Player 1 (X)</label>
+        <input type=text id="name1" class="nameField" name="name1" placeholder="Player1"></input>
+      </div>
+      <br>
+      <div>
+        <label for="name2">Name of Player 2 (O)</label>
+        <input type=text id="name2" class="nameField" name="name2" placeholder="Player2"></input>
+        <br>
+        <br>
+        <label id="computerLabel" for="computer">The moves of player 2 should be made by the computer?
+        <input type=checkbox id="computer" name="computer"/>
+        </label>
+      </div>
+      <input type="submit" id="start" value="Start a new game">
+    </div>
+    <table id="board">
+    </table>
+    <div id="message"></div>
+    <button id="restart" class="invisible">Restart game</button>
+    <button id="start2" class="invisible">Start a new game</button>
+    <script type="text/javascript" src="scripts/main.js"></script>
+  </body>
+</html>
